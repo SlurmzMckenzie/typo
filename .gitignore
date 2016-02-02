@@ -4,6 +4,7 @@
 password
 nbproject
 .*.swo
+assignment submissision
 #/public/javascripts/ckeditor/config.js
 public/cache/*
 *.log
@@ -11,7 +12,7 @@ public/cache/*
 config/mail.yml
 #/public/stylesheets/theme
 db/*.sqlite*
-/coverage/
+db/schema.rb
 .DS_Store
 tmp/*
 .rbenv-version
@@ -20,7 +21,7 @@ tmp/*
 bin/
 .bundle/
 installer/rails_installer.yml
-db/schema.rb
+/coverage/
 *~
 /public/stylesheets/all.css
 /public/javascripts/all.js
