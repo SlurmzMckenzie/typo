@@ -1,7 +1,7 @@
 Feature: Categories
   As a blog administrator
   In order to categorise my articles
-  I want to be create and edit categories in my admin panel
+  I want to create and edit categories in my admin panel
 
   Background:
     Given the blog is set up

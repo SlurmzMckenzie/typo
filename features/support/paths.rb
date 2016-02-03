@@ -24,6 +24,14 @@ module NavigationHelpers
 		when /^the edit category 1 page$/
 			'admin/categories/edit/1'
 
+		#Poor work I know, was having trouble with regex and couldnt be bothered fixing it now
+		when /^the edit article 1 page$/
+			'admin/content/edit/1'
+			puts url = URI.parse(current_url)
+
+		when /^the edit article 2 page$/
+			'admin/content/edit/2'
+
 		# Add more mappings here.
 		# Here is an example that pulls values out of the Regexp:
 		#
