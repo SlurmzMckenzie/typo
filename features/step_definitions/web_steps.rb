@@ -96,7 +96,6 @@ end
 
 When /^(?:|I )go to (.+)$/ do |page_name|
 	visit path_to(page_name)
-	puts url = URI.parse(current_url)
 end
 
 When /^(?:|I )press "([^"]*)"$/ do |button|

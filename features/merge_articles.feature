@@ -13,7 +13,7 @@ Scenario: When articles are merged, the merged article should contain the text o
 	When I fill in "Article ID" with "2"
 	And I press "Merge"
 	Then I should see "Articles successfully merged!"
-	Then I go to the edit article 1 page
+	When I follow "Edit"
 	And I should see "Article 1 body text"
 	And I should see "Article 2 body text"
 
@@ -24,6 +24,7 @@ Scenario: When articles are merged, the merged article should have one author (e
 	Then I should see "Articles successfully merged!"
 	Then I should see "Author"
 	And I should see "admin"
+
 
 # Scenario: Comments on each of the two original articles need to all carry over and point to the new, merged article.
 # 	Given I am on the edit article 1 page
@@ -36,9 +37,8 @@ Scenario: The title of the new article should be the title from either one of th
 	When I fill in "Article ID" with "2"
 	And I press "Merge"
 	Then I should see "Articles successfully merged!"
-	Then I go to the edit article 1 page
 	And I should see "Article 1 Title"
-	And I should see "Article 2 Title"
+
 
 
 
